@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio_react/static/css/main.8596f3fe.css",
-    "main.js": "/portfolio_react/static/js/main.61d1581c.js",
+    "main.css": "/portfolio_react/static/css/main.04890a04.css",
+    "main.js": "/portfolio_react/static/js/main.49d0f237.js",
+    "static/media/TECH_BLOG.png": "/portfolio_react/static/media/TECH_BLOG.a0aec6f1857fab6bbb49.png",
+    "static/media/MTG_EDH_TRACKER.png": "/portfolio_react/static/media/MTG_EDH_TRACKER.764a8d5fbc8b7227a269.png",
     "static/media/background.jpg": "/portfolio_react/static/media/background.af3d495aef19c7ca157e.jpg",
+    "static/media/Screenshot_Translation_App.png": "/portfolio_react/static/media/Screenshot_Translation_App.3259184c526c47180abb.png",
     "static/media/Vlad_Berka_RESUME.pdf": "/portfolio_react/static/media/Vlad_Berka_RESUME.e96e3fb01cb6672d23b4.pdf",
+    "static/media/E_COMMERCE_BACKEND.png": "/portfolio_react/static/media/E_COMMERCE_BACKEND.525ae6378b582d912e7d.png",
+    "static/media/BENS DINER.png": "/portfolio_react/static/media/BENS DINER.9869b7bcd9cb382d56b0.png",
+    "static/media/Weather_Dashboard_ScreenShot_1.png": "/portfolio_react/static/media/Weather_Dashboard_ScreenShot_1.aa718e0416d583c8a736.png",
+    "static/media/NOTE_TAKER.png": "/portfolio_react/static/media/NOTE_TAKER.ee8fa9535de7f9d350a9.png",
     "static/media/headshot.JPG": "/portfolio_react/static/media/headshot.52a57616c5d7882545bb.JPG",
+    "static/media/VMB_CodeQuiz_SS2.png": "/portfolio_react/static/media/VMB_CodeQuiz_SS2.211fb893f6c11f689877.png",
     "index.html": "/portfolio_react/index.html",
-    "main.8596f3fe.css.map": "/portfolio_react/static/css/main.8596f3fe.css.map",
-    "main.61d1581c.js.map": "/portfolio_react/static/js/main.61d1581c.js.map"
+    "main.04890a04.css.map": "/portfolio_react/static/css/main.04890a04.css.map",
+    "main.49d0f237.js.map": "/portfolio_react/static/js/main.49d0f237.js.map"
   },
   "entrypoints": [
-    "static/css/main.8596f3fe.css",
-    "static/js/main.61d1581c.js"
+    "static/css/main.04890a04.css",
+    "static/js/main.49d0f237.js"
   ]
 }
