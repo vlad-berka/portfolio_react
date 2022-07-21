@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio_react/static/css/main.073c9b0a.css",
-    "main.js": "/portfolio_react/static/js/main.3dbddeb9.js",
-    "static/js/787.aeca62f9.chunk.js": "/portfolio_react/static/js/787.aeca62f9.chunk.js",
-    "static/media/logo.svg": "/portfolio_react/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/portfolio_react/static/css/main.18e7bf04.css",
+    "main.js": "/portfolio_react/static/js/main.5a663538.js",
+    "static/media/background.jpg": "/portfolio_react/static/media/background.af3d495aef19c7ca157e.jpg",
+    "static/media/Vlad_Berka_RESUME.pdf": "/portfolio_react/static/media/Vlad_Berka_RESUME.e96e3fb01cb6672d23b4.pdf",
+    "static/media/headshot.JPG": "/portfolio_react/static/media/headshot.52a57616c5d7882545bb.JPG",
     "index.html": "/portfolio_react/index.html",
-    "main.073c9b0a.css.map": "/portfolio_react/static/css/main.073c9b0a.css.map",
-    "main.3dbddeb9.js.map": "/portfolio_react/static/js/main.3dbddeb9.js.map",
-    "787.aeca62f9.chunk.js.map": "/portfolio_react/static/js/787.aeca62f9.chunk.js.map"
+    "main.18e7bf04.css.map": "/portfolio_react/static/css/main.18e7bf04.css.map",
+    "main.5a663538.js.map": "/portfolio_react/static/js/main.5a663538.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.3dbddeb9.js"
+    "static/css/main.18e7bf04.css",
+    "static/js/main.5a663538.js"
   ]
 }
