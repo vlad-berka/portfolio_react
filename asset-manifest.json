@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio_react/static/css/main.18e7bf04.css",
-    "main.js": "/portfolio_react/static/js/main.5a663538.js",
+    "main.css": "/portfolio_react/static/css/main.8596f3fe.css",
+    "main.js": "/portfolio_react/static/js/main.61d1581c.js",
     "static/media/background.jpg": "/portfolio_react/static/media/background.af3d495aef19c7ca157e.jpg",
     "static/media/Vlad_Berka_RESUME.pdf": "/portfolio_react/static/media/Vlad_Berka_RESUME.e96e3fb01cb6672d23b4.pdf",
     "static/media/headshot.JPG": "/portfolio_react/static/media/headshot.52a57616c5d7882545bb.JPG",
     "index.html": "/portfolio_react/index.html",
-    "main.18e7bf04.css.map": "/portfolio_react/static/css/main.18e7bf04.css.map",
-    "main.5a663538.js.map": "/portfolio_react/static/js/main.5a663538.js.map"
+    "main.8596f3fe.css.map": "/portfolio_react/static/css/main.8596f3fe.css.map",
+    "main.61d1581c.js.map": "/portfolio_react/static/js/main.61d1581c.js.map"
   },
   "entrypoints": [
-    "static/css/main.18e7bf04.css",
-    "static/js/main.5a663538.js"
+    "static/css/main.8596f3fe.css",
+    "static/js/main.61d1581c.js"
   ]
 }
