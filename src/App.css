@@ -1,38 +1,375 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* Standard two tone color pallate, text and background */
+:root{
+    --light_text: rgb(140, 143, 146);
+    /* --hightlight_color: rgb(68, 27, 27); */
+    --hightlight_color: rgb(19, 22, 20);
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  /* Global properties for the entire page */
+  * {
+    font-family: monospace, sans-serif;
+    box-sizing: border-box;
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Flex properties of the main part of the page */
+  body {
+    flex-direction: column;
+    margin: 0;
+    background-color: var(--light_text);
+    color: var(--hightlight_color);
   }
-}
+  
+  /* Header inside the body are relative for headshot image placement */
+  body > header {
+    position: relative;
+  }
+  
+  /* header > aside {
+    align-self: center;
+  } */
+  
+  /* FNavigation text apperance text settings */
+  nav {
+    font-size: 115%;
+    font-weight: bolder;
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: center; */
+    flex-wrap: wrap;
+  }
+  
+  /* Flex properties of anchor containers for image links */
+  nav > a {
+    display: flex;
+    background-color: unset;
+    color: var(--hightlight_color);
+    font-weight: bold;
+    padding: 5px 25px 5px 25px;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 3px;
+    line-height: 45px;
+    font-size: 90%;
+  }
+
+  .selected {
+    color: blue;
+    font-weight: bold;
+    line-height: 65px;
+    font-size: 110%;
+  }
+  
+  /* Apperance settings of links */
+  section.two_col > article > nav > a {
+    padding: 5px 25px 5px 25px;
+  }
+  
+  /* Apperance settings of heading text */
+  h1,h2,h3 {
+    margin: 0;
+    /* min-width: 400px; */
+    text-align: right;
+    padding: 10px 10px 10px 10px;
+    color: var(--hightlight_color);  
+    word-break: break-word;
+  }
+  
+  /* Name font height at top of page */
+  h1 {
+    font-size: 240%;
+    background-color: var(--hightlight_color);
+    color: var(--light_text);
+    padding: 20px;
+    /* margin: 15px 0 15px 0; */
+  }
+  
+  /* Section title, font height (left column) */
+  h2 {
+    font-size: 180%;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Heading text of image captions and background caption */
+  h3{
+    font-size: 100%;
+    background-color: var(--hightlight_color);
+    color: var(--light_text);
+  }
+  
+  /* Background image flex properties and appearance settings */
+  .Background {
+    display: flex;
+    background-color: var(--hightlight_color);
+    color: var(--light_text);
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
+    font-weight: bold;
+    border-top: solid 5px var(--hightlight_color);
+    border-bottom: solid 5px var(--hightlight_color);
+    position: relative;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Header flex properties at top of page + nav" */
+  header > article {
+    flex: 3 1 10vw;
+    min-width: 40vw;
+    padding: 25px 0px 25px 0px;
+  }
+  
+  /* Section apperance white space around edge" */
+  aside, article {
+    text-align: left;
+    padding: 0px 10px 0px 10px;
+  }
+  
+  /* Section apperance white space around edge" */
+  section {
+    padding: 30px 0 5px 0;
+    position: static;
+  }
+  
+  /* Container Flex properties for nested flex boxes, both columns*/
+  .two_col {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    flex-wrap: wrap;
+  }
+  
+  /* Container Flex properties for nested flex boxes, side column*/
+  .col-left {
+    padding: 25px 0px 25px 0px;
+  }
+  
+  /* Container Flex properties for nested flex boxes, right column*/
+  .col-right {
+    padding: 25px 15px 25px 15px;
+    border-left: 5px solid var(--hightlight_color);
+  }
+  
+  .top_nav {
+    padding: 25px 15px 25px 15px;
+    border-left: none;
+  }
+  
+  /* Nested Flex container properties*/
+  .nest_col {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    justify-items: stretch;
+    align-content: flex-end;
+  }
+  
+  /* Nested Flex container properties, single large image */
+  .nest_col > article {
+    position: relative;
+  }
+  
+  /* Nested Flex image properties, single large image */
+  .nested_img_L {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    border: 8px solid var(--hightlight_color);
+    margin-bottom: 10px;
+  }
+  
+  /* Nested Flex container properties, side by side */
+  .nest_col > aside {
+    max-width: 50%;
+    min-width: 50%;
+    position: relative;
+  }
+  
+  /* Nested Flex image properties, side by side */
+  .nested_img_S {
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+    border: 8px solid var(--hightlight_color);
+    margin: 10px 0 10px 0;
+  }
+  
+  /* Captions to image links in WORK section */
+  article > h3, aside > h3 {
+    position: absolute;
+    /* top: 50%; */
+    /* justify-content: center; */
+    text-align: center;
+    /* width: 50vw; */
+    height: auto;
+    margin: 0px 10px 0px 8px;
+    z-index: 1;
+    font-size: 170%;
+  }
+  
+  /* Allows text wrapping in about me section */
+  p {
+    text-align: left;
+    overflow-wrap: break-word;
+    line-height: 1.3;
+  }
+  
+  /* Adding highlight on hover for nav text links */
+  a:hover {
+    color: white;
+    opacity: 0.7;
+  }
+  
+  /* Adding highlight on hover for image links */
+  a > img:hover {
+    opacity: 0.7;
+  }
+  
+  /* Specifying appearance of headshot image on page */
+  .headshot {
+    position: absolute;
+    height: 25vw;
+    width: 25vw;
+    top: 0%;
+    border-radius: 50%;
+    border: 5px solid var(--hightlight_color);
+    z-index: 2;
+    /* Locating "absolute" headshot image placement on smaller screens  */ 
+    top: 10%;
+    left: 0%;
+
+  }
+  
+  .col-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .col-left, .col-right {
+    margin-top: 25px;
+  }
+  
+  .img_link {
+    color: red;
+    background-color: black;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  h3 > a {
+    color: var(--light_text);
+    font-style: normal;
+    max-width: 100vw;
+  }
+  
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  
+  @media screen and (max-width: 900px) {
+  
+    /* Adjusting spaces around sides of content, changing to column layout */
+    nav {
+      justify-content: center;
+      align-content: center;
+    }
+  
+    /* Adjusting text size for smaller screens */
+    article > h3, aside > h3 {
+      font-size: 115%;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+  
+    /* Adjusting title appearance with smaller screens  */
+    h1,h2,h3 {
+      text-align: center;
+      width: 100%
+    }
+  
+    /* Adjusting title appearance with smaller screens  */
+    /* h2 {
+      text-decoration: underline;
+    } */
+  
+    .xtra_pad {
+      padding-bottom: 20px;
+    }
+  
+    .col-right{
+      border: none;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  
+    .col-left {
+      padding-top: 0;
+      padding-bottom: 0;
+      border-bottom: 3px solid var(--hightlight_color);
+    }
+  
+    /* Adjusting spaces around sides of content, changing to column layout */
+    body, section, header, aside, article, div {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      align-content: center;
+      padding: 0 0 0 0;
+      position: static;
+    }
+  
+    article > h3, aside > h3 {
+      width: 85%;
+    }
+  
+    /* Adjusting spaces around sides of content */
+    aside, article {
+      width: 100%;
+      padding: 0px 10px 0px 10px;
+      position: static;
+    } 
+   
+    /* Adjusting spaces around anchor links for appearance */
+    a {
+      padding: 5px 5px 5px 5px;
+    }
+  
+    /* Formatting Contact Me "footer" */
+    section.two_col > aside {
+      padding: 5px 0 5px 0px;
+    }
+  
+    /* Formatting Name "header" */
+    .two_col > aside {
+      padding: 25px 0px 5px 0px;
+    }
+  
+    /* Adjusting text size for smaller screens */
+    article > h3, aside > h3 {
+      font-size: 100%;
+    }
+    
+    /* Adjusting side margins for narrower screens */
+    section.two_col > article {
+      width: 95vw;
+      border-left: none;
+      border-bottom: solid 5px var(--hightlight_color);
+      padding: 0 0 5px 0px;
+      margin: 0 0 15px 0px;
+    }
+  
+    .row {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .top_nav{
+      padding: 0;
+      margin-top: 0;
+    }
+  }

@@ -1,28 +1,30 @@
 import React, {useState} from 'react';
 import Navbar from './Navbar';
 import HeadIMG from './HeadIMG';
-// import Home from './Home';
-// import About from './About';
-// import Blog from './Blog';
+import Bio from './Bio';
+import Brand from './BrandStatement';
+import Work from './Projects';
 import Footer from './Footer';
 // import Contact from './Contact';
 
 export default function PortfolioContainer() {
-    const [currentPage, setCurrentPage] = useState('Home');
+    const [currentPage, setCurrentPage] = useState('Brand');
 
     const renderContainer = () => {
         switch(currentPage) {
-            // case 'Home':
-            //     return <Home/>
-            //     break;
-            // case 'About':
-            //     return <About/>
-            //     break;
-            // case 'Blog':
-            //     return <Blog/>
-            //     break;
-            // default:
-            //     return <Home/>
+            case 'Bio':
+                return <Bio/>
+                break;
+            case 'Brand':
+                return <Brand/>
+                break;
+            case 'Work':
+                return <Work/>
+                break;
+            case 'Contact':
+                break;
+            default:
+                return <Brand/>
         }
     };
 
